@@ -37,7 +37,7 @@ class MahasiswaController extends Controller
         $validator = Validator::make($request->all(), [
             'nim' => 'required',
             'nama_lengkap' => 'required',
-            'prodi_id' => 'required|exists:prodi,prodi_id',
+            'prodi_id' => 'required'
         ]);
 
         // cek jika ada eror validasi form
@@ -90,7 +90,7 @@ class MahasiswaController extends Controller
         $validator = Validator::make($request->all(), [
             'nim' => 'required',
             'nama_lengkap' => 'required',
-            'prodi_id' => 'required|exists:prodi,prodi_id',
+            'prodi_id' => 'required'
         ]);
 
         // cek jika ada eror validasi form

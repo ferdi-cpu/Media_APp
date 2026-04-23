@@ -13,11 +13,14 @@ class Media extends Model
     protected $primaryKey = 'media_id';
 
     protected $fillable = [
+        'mahasiswa_id',
+        'kategori_id',
         'judul',
         'deskripsi',
-        'file_url',
-        'mahasiswa_id',
-        'kategori_id'
+        'judul_penelitian',
+        'tahun_terbit',
+        'link_media',
+        'gambar_cover'
     ];
 
     // relasi ke mahasiswa
